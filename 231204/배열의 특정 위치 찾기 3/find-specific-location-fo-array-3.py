@@ -1,0 +1,8 @@
+arr = list(map(int, input().split()))
+new_arr = list()
+for elem in arr:
+    if elem == 0:
+        break
+    else:
+        new_arr.append(elem)
+print(new_arr[-1] + new_arr[-2] + new_arr[-3])
