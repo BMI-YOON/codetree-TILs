@@ -15,5 +15,5 @@ def f(len):
         for _ in range(cur):
             arr.pop()
     
-f(1)
+f(0)
 print(cnt)
