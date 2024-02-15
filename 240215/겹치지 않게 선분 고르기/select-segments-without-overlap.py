@@ -19,12 +19,12 @@ def simulate(num):
     global n, arr, selected, ans 
 
     if num == n:
+        ans = max(ans, len(selected))
         return 
     simulate(num+1)
     x1, x2 = arr[num][0], arr[num][1]
     if f(x1, x2, selected):
         selected.append((arr[num][0], arr[num][1]))
-        ans = max(ans, num+1)
         simulate(num+1)
 
 simulate(0)
