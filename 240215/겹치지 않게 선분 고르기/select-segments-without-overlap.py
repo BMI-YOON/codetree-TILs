@@ -28,6 +28,7 @@ def simulate(num):
     if f(x1, x2, selected):
         selected.append((arr[num][0], arr[num][1]))
         simulate(num+1)
+        selected.pop()
 
 simulate(0)
 print(ans)
