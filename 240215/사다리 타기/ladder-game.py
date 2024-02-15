@@ -36,7 +36,7 @@ def simulate(k):
     if k == m:
         candidate = cal()
         if candidate == ans:
-            minimum = min(m, len(candidate))
+            minimum = min(m, len(selected))
         return 
     simulate(k+1)
     selected.append((arr[k][0], arr[k][1]))
