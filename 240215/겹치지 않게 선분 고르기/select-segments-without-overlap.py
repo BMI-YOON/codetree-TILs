@@ -13,6 +13,8 @@ def f(x1, x2, selected):
             return False
         if selected[i][0] <= x2 <= selected[i][1]:
             return False
+        if x1 < selected[i][0] and selected[i][1] < x2:
+            return False
     return True
 
 def simulate(num):
