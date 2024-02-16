@@ -30,7 +30,7 @@ for x1 in range(N):
             for y2 in range(N):
                 if y1+M-1 >= N or y2+M-1 >= N:
                     continue 
-                if x1 == x2 and (y2 <= y1+M-1 or y1 <= y2+M-1):
+                if x1 == x2 and (y1 == y2 or (y1 < y2 and y2 <= y1+M-1) or (y2 < y1 and y1 <= y2+M-1)):
                     continue
                 ans = 0
                 ans_val = 0
