@@ -16,8 +16,8 @@ def value(x, y, cnt, weight, val):
     weight += grid[x][y+cnt]
     val += grid[x][y+cnt] ** 2
     value(x, y, cnt+1, weight, val)
-    weight -= grid[x][y+cnt]
-    val -= grid[x][y+cnt] ** 2
+    #weight -= grid[x][y+cnt]
+    #val -= grid[x][y+cnt] ** 2
 
 def in_range(x, y):
     global N
