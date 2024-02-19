@@ -13,7 +13,7 @@ def simulate(cur):
             position[elem-1] += dist[i]
         cnt = 0
         for idx in range(k):
-            if position[idx] >= m:
+            if position[idx] >= m-1:
                 cnt += 1
         ans = max(ans, cnt)
         return 
