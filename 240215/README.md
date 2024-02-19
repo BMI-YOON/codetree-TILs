@@ -13,7 +13,7 @@
 |교재|이름|난이도|상태|최근 제출 코드|
 |---|---|:---:|:---:|---|
 |[Intermediate Low / Backtracking / K개 중 하나를 N번 선택하기(Simple)](https://www.codetree.ai/missions?missionId=2)|[[연습]겹치지 않게 선분 고르기](https://www.codetree.ai/missions/2/problems/select-segments-without-overlap)|![보통][medium]|![Passed][passed]|[링크](https://github.com/BMI-YOON/codetree-TILs/blob/main/240215/%EA%B2%B9%EC%B9%98%EC%A7%80%20%EC%95%8A%EA%B2%8C%20%EC%84%A0%EB%B6%84%20%EA%B3%A0%EB%A5%B4%EA%B8%B0/select-segments-without-overlap.py)|
-|[Intermediate Low / Backtracking / K개 중 하나를 N번 선택하기(Simple)](https://www.codetree.ai/missions?missionId=2)|[[연습]사다리 타기](https://www.codetree.ai/missions/2/problems/ladder-game)|![어려움][hard]|![Failed][failed]|[링크](https://github.com/BMI-YOON/codetree-TILs/blob/main/240215/%EC%82%AC%EB%8B%A4%EB%A6%AC%20%ED%83%80%EA%B8%B0/ladder-game.py)|
+|[Intermediate Low / Backtracking / K개 중 하나를 N번 선택하기(Simple)](https://www.codetree.ai/missions?missionId=2)|[[연습]사다리 타기](https://www.codetree.ai/missions/2/problems/ladder-game)|![어려움][hard]|![Passed][passed]|[링크](https://github.com/BMI-YOON/codetree-TILs/blob/main/240215/%EC%82%AC%EB%8B%A4%EB%A6%AC%20%ED%83%80%EA%B8%B0/ladder-game.py)|
 
 
 * 획득 경험치: 해설을 보지 않고 푼 문제에 한해 최초 1회 경험치를 획득하실 수 있습니다.
