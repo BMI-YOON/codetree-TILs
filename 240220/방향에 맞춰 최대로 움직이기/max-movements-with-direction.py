@@ -23,6 +23,7 @@ def candidate(x, y):
     global n, num, dir, ans
 
     arr = list()
+    cur_num = num[x][y]
     cur_dir = dir[x][y]
     while True:
         next_x = x + dxs[cur_dir]
@@ -30,7 +31,7 @@ def candidate(x, y):
         if not in_range(next_x, next_y):
             break
         else:
-            if num[next_x][next_y] > num[x][y]:
+            if num[next_x][next_y] > cur_num:
                 arr.append((next_x, next_y))
             x, y = next_x, next_y
     return arr
