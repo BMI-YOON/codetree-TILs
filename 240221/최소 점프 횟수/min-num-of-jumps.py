@@ -6,7 +6,7 @@ ans = sys.maxsize
 
 def simulate(cur, cnt):
     global n, arr, ans 
-    
+
     if cur == n-1:
         ans = min(ans, cnt)
         return
@@ -14,4 +14,7 @@ def simulate(cur, cnt):
         simulate(next, cnt+1)
 
 simulate(0, 0)
-print(ans)
+if ans == sys.maxsize:
+    print(-1)
+else:
+    print(ans)
