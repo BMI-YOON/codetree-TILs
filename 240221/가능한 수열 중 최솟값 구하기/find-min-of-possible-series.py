@@ -19,7 +19,8 @@ def simulate(cur):
             if not cnt:
                 for elem in selected:
                     print(elem, end = '')
-            cnt = 1
+            cnt = 
+            exit()
         return 
     for num in range(4, 7):
         selected.append(num)
