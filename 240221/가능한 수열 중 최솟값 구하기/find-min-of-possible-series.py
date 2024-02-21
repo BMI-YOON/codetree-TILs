@@ -15,7 +15,7 @@ def simulate(cur):
     global n, selected, cnt 
 
     if cur == n:
-        if check():
+        if check() and not cnt:
             if not cnt:
                 for elem in selected:
                     print(elem, end = '')
