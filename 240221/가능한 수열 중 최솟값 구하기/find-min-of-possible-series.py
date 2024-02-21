@@ -18,9 +18,6 @@ def simulate(cur):
         exit(0)
     for num in range(4, 7):
         selected.append(num)
-        print(selected)
-        print(num)
-        print(check())
         if check():
             simulate(cur+1)
         selected.pop()
