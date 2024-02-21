@@ -1,6 +1,5 @@
 n = int(input())
 selected = list()
-cnt = 0
 
 def check():
     global n, selected 
@@ -12,14 +11,12 @@ def check():
     return True
 
 def simulate(cur):
-    global n, selected, cnt 
+    global n, selected
 
     if cur == n:
-        if check() and not cnt:
-            if not cnt:
-                for elem in selected:
-                    print(elem, end = '')
-            cnt = 1
+        if check():
+            for elem in selected:
+                print(elem, end = '')
             exit()
         return 
     for num in range(4, 7):
