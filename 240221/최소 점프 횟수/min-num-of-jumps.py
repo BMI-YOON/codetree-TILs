@@ -10,11 +10,9 @@ def simulate(cur, cnt):
     if cur == n-1:
         ans = min(ans, cnt)
         return
-    if arr[cur] == 0:
-        return 
-    else:
-        for next in range(cur+1, min(cur+arr[cur]+1, n)):
-            simulate(next, cnt+1)
+        
+    for next in range(cur+1, min(cur+arr[cur]+1, n)):
+        simulate(next, cnt+1)
 
 simulate(0, 0)
 if ans == sys.maxsize:
