@@ -4,16 +4,11 @@ cnt = 0
 
 def check():
     global n, selected 
-
-    for i in range(n-1):
-        if selected[i] == selected[i+1]:
-            return False
-    for i in range(n-3):
-        if selected[i:i+2] == selected[i+2:i+4]:
-            return False
-    for i in range(n-5):
-        if selected[i:i+3] == selected[i+3:i+6]:
-            return False 
+    max_length = int(n/2)
+    for length in range(1, max_length + 1):
+        for i in range(n-length*2+1):
+            if selected[i:i+length] == selected[i+length:i+length+length]:
+                return False 
     return True
 
 def simulate(cur):
