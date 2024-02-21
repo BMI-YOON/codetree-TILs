@@ -14,14 +14,13 @@ def simulate(cur):
     global n, selected
 
     if cur == n:
-        if check():
-            for elem in selected:
-                print(elem, end = '')
-            exit(0)
-        return 
+        for elem in selected:
+            print(elem, end = '')
+        exit(0)
     for num in range(4, 7):
         selected.append(num)
-        simulate(cur+1)
+        if check():
+            simulate(cur+1)
         selected.pop()
 
 simulate(0)
