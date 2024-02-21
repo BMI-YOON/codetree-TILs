@@ -2,7 +2,7 @@ import sys
 
 n = int(input())
 arr = list(map(int, input().split()))
-ans = 11
+ans = sys.maxsize
 
 def simulate(cur, cnt):
     global n, arr, ans 
@@ -13,11 +13,11 @@ def simulate(cur, cnt):
     if arr[cur] == 0:
         return 
     else:
-        for next in range(cur+1, cur+arr[cur]+1):
+        for next in range(cur+1, min(cur+arr[cur]+1, n)):
             simulate(next, cnt+1)
 
 simulate(0, 0)
-if ans == 11:
+if ans == sys.maxsize:
     print(-1)
 else:
     print(ans)
