@@ -37,8 +37,12 @@ def simulate(previous, cur, cnt, cost):
     
     simulate(previous, cur+1, cnt, cost)
 
-    cost += distance(previous, cur)
-    simulate(cur, cur+1, cnt+1, cost)
+    if position[cur] != (-1, -1):
+        cost += distance(previous, cur)
+        simulate(cur, cur+1, cnt+1, cost)
 
 simulate(0, 1, 0, 0)
-print(ans)
+if ans == sys.maxsize:
+    print(-1)
+else:
+    print(ans)
