@@ -18,12 +18,10 @@ def cal():
 def simulate(cur, cnt):
     global n, m, arr, selected, ans 
 
-    if cnt == m:
-        ans = max(ans, cal())
+    if cur == n:
+        if cnt == m:
+            ans = max(ans, cal())
         return 
-    
-    if cur == n: 
-        return
 
     simulate(cur+1, cnt)
 
