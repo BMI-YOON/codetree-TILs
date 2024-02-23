@@ -25,10 +25,10 @@ def simulate(cur):
     global n, m, arr, grid, selected, ans
 
     if len(selected) == m:
-        max_val = sys.maxsize 
+        max_val = 0
         for i in range(len(selected)):
             for j in range(i+1, len(selected)):
-                max_val = min(max_val, grid[selected[i]][selected[j]])
+                max_val = max(max_val, grid[selected[i]][selected[j]])
         ans = min(ans, max_val)
         return 
     
@@ -36,7 +36,7 @@ def simulate(cur):
         return 
 
     simulate(cur+1)
-    
+
     selected.append(cur)
     simulate(cur+1)
     selected.pop()
