@@ -35,11 +35,11 @@ def simulate(cur):
     if cur == n:
         return 
 
+    simulate(cur+1)
+    
     selected.append(cur)
     simulate(cur+1)
     selected.pop()
-
-    simulate(cur+1)
 
 simulate(0)
 print(ans)
