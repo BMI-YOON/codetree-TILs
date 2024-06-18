@@ -17,6 +17,8 @@ def f(i):
         sum_val = 0
         for idx in range(1, n):
             sum_val += grid[arr[idx-1]][arr[idx]]
+        if grid[arr[-1]][0] == 0:
+            return 
         sum_val += grid[arr[-1]][0]
         answer = min(answer, sum_val)
         return
